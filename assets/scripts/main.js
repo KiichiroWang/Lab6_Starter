@@ -66,6 +66,7 @@ function saveRecipesToStorage(recipes) {
 	// B1. TODO - Complete the functionality as described in this function
 	//            header. It is possible in only a single line, but should
 	//            be no more than a few lines.
+	localStorage.setItem('recipes', JSON.stringify(recipes));
 }
 
 /**
@@ -124,8 +125,4 @@ function initFormHandler() {
 	});
 }
 
-// function saveRecipesToStorage(recipes) {
-//   localStorage.setItem('recipes', JSON.stringify(recipes));
-// }
-
-//window.getRecipesFromStorage = getRecipesFromStorage;
+window.getRecipesFromStorage = getRecipesFromStorage;
